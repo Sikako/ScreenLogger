@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "ScreenLogger/1.0.0": {
+        "dependencies": {
+          "PrtScModels": "1.0.0"
+        },
+        "runtime": {
+          "ScreenLogger.dll": {}
+        }
+      },
+      "PrtScModels/1.0.0": {
+        "runtime": {
+          "PrtScModels.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ScreenLogger/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PrtScModels/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

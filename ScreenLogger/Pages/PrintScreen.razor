@@ -1,0 +1,30 @@
+﻿@page "/printscreen"
+@using PrtScModels.Models;
+@using ScreenLogger.Data;
+@inject IPrtScService getPrtScInformation;
+
+<PageTitle>PrintScreen</PageTitle>
+
+<p><span>螢幕截圖狀態：@prtsc.Status</span></p>
+LineNotify權杖： <input type="text" name="inputToken" @bind="prtsc.Token"  required>
+<button class="btn btn-primary" @onclick="shift_status">點擊</button>
+
+<h5>PrtSc status</h5>
+<p>Status:@prtsc.Status </p>
+<p>Token:@prtsc.Token</p>
+@code {
+    public PrtSc prtsc = new PrtSc("DOWN", "");
+       /*
+    protected override async Task OnInitializedAsync(){
+     await GetPrtSc();
+    }
+
+    private async Task GetPrtSc(){
+     prtsc = await getPrtScInformation.GetPrtSc();
+    }
+    */
+
+    private void shift_status(){
+        prtsc.Status = (prtsc.Status == "UP") ? "DOWN" : "UP";
+    }
+}

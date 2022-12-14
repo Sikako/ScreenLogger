@@ -1,0 +1,125 @@
+{
+  "format": 1,
+  "restore": {
+    "A:\\OneDrive - National Chiao Tung University\\作業\\科科院\\ScreenLogger\\ScreenLogger\\ScreenLogger.csproj": {}
+  },
+  "projects": {
+    "A:\\OneDrive - National Chiao Tung University\\作業\\科科院\\ScreenLogger\\PrtScModels\\PrtScModels.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "A:\\OneDrive - National Chiao Tung University\\作業\\科科院\\ScreenLogger\\PrtScModels\\PrtScModels.csproj",
+        "projectName": "PrtScModels",
+        "projectPath": "A:\\OneDrive - National Chiao Tung University\\作業\\科科院\\ScreenLogger\\PrtScModels\\PrtScModels.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "A:\\OneDrive - National Chiao Tung University\\作業\\科科院\\ScreenLogger\\PrtScModels\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "A:\\OneDrive - National Chiao Tung University\\作業\\科科院\\ScreenLogger\\ScreenLogger\\ScreenLogger.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "A:\\OneDrive - National Chiao Tung University\\作業\\科科院\\ScreenLogger\\ScreenLogger\\ScreenLogger.csproj",
+        "projectName": "ScreenLogger",
+        "projectPath": "A:\\OneDrive - National Chiao Tung University\\作業\\科科院\\ScreenLogger\\ScreenLogger\\ScreenLogger.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "A:\\OneDrive - National Chiao Tung University\\作業\\科科院\\ScreenLogger\\ScreenLogger\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "A:\\OneDrive - National Chiao Tung University\\作業\\科科院\\ScreenLogger\\PrtScModels\\PrtScModels.csproj": {
+                "projectPath": "A:\\OneDrive - National Chiao Tung University\\作業\\科科院\\ScreenLogger\\PrtScModels\\PrtScModels.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
