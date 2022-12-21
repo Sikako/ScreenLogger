@@ -8,57 +8,57 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ScreenLogger
 build_property.RootNamespace = ScreenLogger
-build_property.ProjectDir = A:\OneDrive - National Chiao Tung University\作業\科科院\ScreenLogger\ScreenLogger\
+build_property.ProjectDir = a:\OneDrive - National Chiao Tung University\作業\科科院\ScreenLogger\ScreenLogger\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = A:\OneDrive - National Chiao Tung University\作業\科科院\ScreenLogger\ScreenLogger
+build_property.MSBuildProjectDirectory = a:\OneDrive - National Chiao Tung University\作業\科科院\ScreenLogger\ScreenLogger
 build_property._RazorSourceGeneratorDebug = 
 
-[A:/OneDrive - National Chiao Tung University/作業/科科院/ScreenLogger/ScreenLogger/App.razor]
+[a:/OneDrive - National Chiao Tung University/作業/科科院/ScreenLogger/ScreenLogger/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[A:/OneDrive - National Chiao Tung University/作業/科科院/ScreenLogger/ScreenLogger/Pages/Counter.razor]
+[a:/OneDrive - National Chiao Tung University/作業/科科院/ScreenLogger/ScreenLogger/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[A:/OneDrive - National Chiao Tung University/作業/科科院/ScreenLogger/ScreenLogger/Pages/FetchData.razor]
+[a:/OneDrive - National Chiao Tung University/作業/科科院/ScreenLogger/ScreenLogger/Pages/FetchData.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[A:/OneDrive - National Chiao Tung University/作業/科科院/ScreenLogger/ScreenLogger/Pages/Index.razor]
+[a:/OneDrive - National Chiao Tung University/作業/科科院/ScreenLogger/ScreenLogger/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[A:/OneDrive - National Chiao Tung University/作業/科科院/ScreenLogger/ScreenLogger/Pages/PrintScreen.razor]
+[a:/OneDrive - National Chiao Tung University/作業/科科院/ScreenLogger/ScreenLogger/Pages/PrintScreen.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpbnRTY3JlZW4ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[A:/OneDrive - National Chiao Tung University/作業/科科院/ScreenLogger/ScreenLogger/Shared/SurveyPrompt.razor]
+[a:/OneDrive - National Chiao Tung University/作業/科科院/ScreenLogger/ScreenLogger/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[A:/OneDrive - National Chiao Tung University/作業/科科院/ScreenLogger/ScreenLogger/_Imports.razor]
+[a:/OneDrive - National Chiao Tung University/作業/科科院/ScreenLogger/ScreenLogger/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[A:/OneDrive - National Chiao Tung University/作業/科科院/ScreenLogger/ScreenLogger/Shared/MainLayout.razor]
+[a:/OneDrive - National Chiao Tung University/作業/科科院/ScreenLogger/ScreenLogger/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-brq9pi8876
 
-[A:/OneDrive - National Chiao Tung University/作業/科科院/ScreenLogger/ScreenLogger/Shared/NavMenu.razor]
+[a:/OneDrive - National Chiao Tung University/作業/科科院/ScreenLogger/ScreenLogger/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-nhdr4zr1fo
 
-[A:/OneDrive - National Chiao Tung University/作業/科科院/ScreenLogger/ScreenLogger/Pages/Error.cshtml]
+[a:/OneDrive - National Chiao Tung University/作業/科科院/ScreenLogger/ScreenLogger/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[A:/OneDrive - National Chiao Tung University/作業/科科院/ScreenLogger/ScreenLogger/Pages/_Host.cshtml]
+[a:/OneDrive - National Chiao Tung University/作業/科科院/ScreenLogger/ScreenLogger/Pages/_Host.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[A:/OneDrive - National Chiao Tung University/作業/科科院/ScreenLogger/ScreenLogger/Pages/_Layout.cshtml]
+[a:/OneDrive - National Chiao Tung University/作業/科科院/ScreenLogger/ScreenLogger/Pages/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

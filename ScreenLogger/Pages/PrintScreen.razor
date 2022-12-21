@@ -31,7 +31,6 @@
 <hr />
 <p><span>螢幕截圖狀態：@myPrtScStatus.Status</span></p>
 <p>Token：@myPrtScStatus.Token</p>
-<button class="btn btn-primary" @onclick="getApi">點擊</button>
 
 <h1>@myInt</h1>
 
@@ -50,7 +49,7 @@
 
     protected override async Task OnInitializedAsync()
     {
-        myInt = await Api.GetInt();
+        //myInt = await Api.GetInt();
         await getApi();
     }
 
