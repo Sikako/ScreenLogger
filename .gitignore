@@ -1,0 +1,8 @@
+*vsidx
+*cache
+PrtScApi/obj/Release
+PrtScApi/bin/Release
+ScreenLogger/bin/Release
+ScreenLogger/obj/Release
+PrtScModels/bin/Release/
+PrtScModels/obj/Release/

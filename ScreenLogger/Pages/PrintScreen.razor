@@ -1,30 +1,78 @@
 ﻿@page "/printscreen"
 @using PrtScModels.Models;
 @using ScreenLogger.Data;
-@inject IPrtScService getPrtScInformation;
+@using System.Text.Json
+@using System.Text.Json.Serialization
+@using System.Net.Http
+@using Newtonsoft.Json
+@inject PrtScAPIService Api
+@inject IHttpClientFactory ClientFactory
+@inject HttpClient Http
 
 <PageTitle>PrintScreen</PageTitle>
-
-<p><span>螢幕截圖狀態：@prtsc.Status</span></p>
-LineNotify權杖： <input type="text" name="inputToken" @bind="prtsc.Token"  required>
+<div class="form-group">
+    <label>選擇螢幕截圖狀態：</label>
+        <div>
+            <input type="radio" id="yes" name="Status" value="YES"  checked/>
+            <label for="yes">YES</label>
+        </div>
+        <div>
+            <input type="radio" id="no" name="Status" value="NO" />
+            <label for="no">NO</label>
+        </div>
+</div>
+<br />
+<div class="form-group">
+    <label for="token">Line Notify 權杖：</label>
+    <input type="text" class="form-control" id="token"  placeholder="Enter Token" name="token">
+</div>
+<br />
+<button class="btn btn-success" @onclick="getApi">Save</button>
+<hr />
+<p><span>螢幕截圖狀態：@myPrtScStatus.Status</span></p>
+LineNotify權杖： <input type="text" name="inputToken" @bind="myPrtScStatus.Token"  required>
 <button class="btn btn-primary" @onclick="shift_status">點擊</button>
 
+<h1>@myInt</h1>
 <h5>PrtSc status</h5>
-<p>Status:@prtsc.Status </p>
-<p>Token:@prtsc.Token</p>
+<p>Status:@myPrtScStatus.Status </p>
+<p>Token:@myPrtScStatus.Token</p>
 @code {
-    public PrtSc prtsc = new PrtSc("DOWN", "");
-       /*
-    protected override async Task OnInitializedAsync(){
-     await GetPrtSc();
+    public PrtScStatus myPrtScStatus = new PrtScStatus();
+    private bool getStatusError;
+    private bool shouldRender;
+    private string myInt = "113";
+
+
+    protected override bool ShouldRender() => shouldRender;
+
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        myInt = await Api.GetInt();
+
+        shouldRender = true;
     }
 
-    private async Task GetPrtSc(){
-     prtsc = await getPrtScInformation.GetPrtSc();
+    private async void getApi(){
+        var response = await Api.GetPrtSc();
+        shouldRender = true;
+        if (response.IsSuccessStatusCode)
+        {
+            var responseS = await response.Content.ReadAsStringAsync();
+            myPrtScStatus = JsonConvert.DeserializeObject<PrtScStatus>(responseS);
+            //using var responseStream = await response.Content.ReadAsStreamAsync();
+            //myPrtScStatus = await JsonSerializer.DeserializeAsync<PrtScStatus>(responseStream)!;
+        }
+        else
+        {
+            getStatusError = true;
+        }
     }
-    */
 
     private void shift_status(){
-        prtsc.Status = (prtsc.Status == "UP") ? "DOWN" : "UP";
+        shouldRender = true;
+        myPrtScStatus.Status = (myPrtScStatus.Status == "UP") ? "DOWN" : "UP";
     }
 }

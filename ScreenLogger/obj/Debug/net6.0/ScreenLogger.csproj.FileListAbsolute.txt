@@ -6,6 +6,8 @@ A:\OneDrive - National Chiao Tung University\作業\科科院\ScreenLogger\Scree
 A:\OneDrive - National Chiao Tung University\作業\科科院\ScreenLogger\ScreenLogger\bin\Debug\net6.0\ScreenLogger.runtimeconfig.json
 A:\OneDrive - National Chiao Tung University\作業\科科院\ScreenLogger\ScreenLogger\bin\Debug\net6.0\ScreenLogger.dll
 A:\OneDrive - National Chiao Tung University\作業\科科院\ScreenLogger\ScreenLogger\bin\Debug\net6.0\ScreenLogger.pdb
+A:\OneDrive - National Chiao Tung University\作業\科科院\ScreenLogger\ScreenLogger\bin\Debug\net6.0\PrtScModels.dll
+A:\OneDrive - National Chiao Tung University\作業\科科院\ScreenLogger\ScreenLogger\bin\Debug\net6.0\PrtScModels.pdb
 A:\OneDrive - National Chiao Tung University\作業\科科院\ScreenLogger\ScreenLogger\obj\Debug\net6.0\ScreenLogger.csproj.AssemblyReference.cache
 A:\OneDrive - National Chiao Tung University\作業\科科院\ScreenLogger\ScreenLogger\obj\Debug\net6.0\ScreenLogger.GeneratedMSBuildEditorConfig.editorconfig
 A:\OneDrive - National Chiao Tung University\作業\科科院\ScreenLogger\ScreenLogger\obj\Debug\net6.0\ScreenLogger.AssemblyInfoInputs.cache
@@ -20,11 +22,10 @@ A:\OneDrive - National Chiao Tung University\作業\科科院\ScreenLogger\Scree
 A:\OneDrive - National Chiao Tung University\作業\科科院\ScreenLogger\ScreenLogger\obj\Debug\net6.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
 A:\OneDrive - National Chiao Tung University\作業\科科院\ScreenLogger\ScreenLogger\obj\Debug\net6.0\scopedcss\bundle\ScreenLogger.styles.css
 A:\OneDrive - National Chiao Tung University\作業\科科院\ScreenLogger\ScreenLogger\obj\Debug\net6.0\scopedcss\projectbundle\ScreenLogger.bundle.scp.css
+A:\OneDrive - National Chiao Tung University\作業\科科院\ScreenLogger\ScreenLogger\obj\Debug\net6.0\ScreenLogger.csproj.CopyComplete
 A:\OneDrive - National Chiao Tung University\作業\科科院\ScreenLogger\ScreenLogger\obj\Debug\net6.0\ScreenLogger.dll
 A:\OneDrive - National Chiao Tung University\作業\科科院\ScreenLogger\ScreenLogger\obj\Debug\net6.0\refint\ScreenLogger.dll
 A:\OneDrive - National Chiao Tung University\作業\科科院\ScreenLogger\ScreenLogger\obj\Debug\net6.0\ScreenLogger.pdb
 A:\OneDrive - National Chiao Tung University\作業\科科院\ScreenLogger\ScreenLogger\obj\Debug\net6.0\ScreenLogger.genruntimeconfig.cache
 A:\OneDrive - National Chiao Tung University\作業\科科院\ScreenLogger\ScreenLogger\obj\Debug\net6.0\ref\ScreenLogger.dll
-A:\OneDrive - National Chiao Tung University\作業\科科院\ScreenLogger\ScreenLogger\bin\Debug\net6.0\PrtScModels.dll
-A:\OneDrive - National Chiao Tung University\作業\科科院\ScreenLogger\ScreenLogger\bin\Debug\net6.0\PrtScModels.pdb
-A:\OneDrive - National Chiao Tung University\作業\科科院\ScreenLogger\ScreenLogger\obj\Debug\net6.0\ScreenLogger.csproj.CopyComplete
+A:\OneDrive - National Chiao Tung University\作業\科科院\ScreenLogger\ScreenLogger\bin\Debug\net6.0\Newtonsoft.Json.dll

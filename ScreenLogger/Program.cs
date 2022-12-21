@@ -14,7 +14,7 @@ namespace ScreenLogger
             builder.Services.AddRazorPages();
             builder.Services.AddServerSideBlazor();
             builder.Services.AddSingleton<WeatherForecastService>();
-            builder.Services.AddSingleton<PrtScer>();
+            builder.Services.AddSingleton<PrtScAPIService>();
             /*builder.Services.AddHttpClient<IPrtScService, PrtScer>(client =>
             {
                 client.BaseAddress = new Uri("http://localhost:7084/");

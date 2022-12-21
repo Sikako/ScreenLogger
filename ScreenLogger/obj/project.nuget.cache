@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "rZebhJCCmhqAgb48E9pZF7bxbkILlaUCwErhW8XTb7/4fZ/HKdzXSz70Q+dwK71VYaSkQwBKAuVsYSgmgjRDBw==",
+  "dgSpecHash": "xnHtaR14ZkT/U+aMOEJEXUrzZzWR5FyjeZexdB7KJoovPJK/TgGDog+musuGTUZ5XYR0HEBZiGJYES31862NEQ==",
   "success": true,
   "projectFilePath": "A:\\OneDrive - National Chiao Tung University\\作業\\科科院\\ScreenLogger\\ScreenLogger\\ScreenLogger.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\User\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512"
+  ],
   "logs": []
 }

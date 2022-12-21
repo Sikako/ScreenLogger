@@ -1,4 +1,4 @@
-namespace ScreenLogger.Data
+    namespace ScreenLogger.Data
 {
     public class WeatherForecastService
     {
