@@ -8,24 +8,23 @@ namespace PrtScApi.Controllers
     [ApiController]
     public class PrtScController : ControllerBase
     {
-        public PrtScStatus prtsc = new PrtScStatus("DOWN", "YFWxJdBMhrdM4CfYhxpAhotF0SCwSmAVRn52YPq3iIv");
+        static readonly IPrtScApi prtscapi = new PrtScModels.Models.PrtScApi();
 
         [HttpGet]
         [Route("GetPrtSc")]
         public IActionResult GetPrtSc()
         {
-            return Ok(prtsc);
+            return Ok(prtscapi.GetPrtSc());
         }
   
        
         [HttpPost]
         [Route("PostPrtSc")]
-        public IActionResult PostPrtSc([FromBody]JsonContent  body)
+        public IActionResult PostPrtSc(PrtScStatus updated_prtsc)
         {
-            
-
-            return Ok();
+            return Ok(prtscapi.Update(updated_prtsc));
         }
+
        
     }
 }

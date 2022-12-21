@@ -26,6 +26,7 @@
 
     <button type="submit" class="btn btn-success">更新狀態</button>
 </EditForm>
+<h5>@returnStatus</h5>
 <br />
 <hr />
 <p><span>螢幕截圖狀態：@myPrtScStatus.Status</span></p>
@@ -40,8 +41,7 @@
     private bool getStatusError;
     private bool shouldRender;
     private string? myInt;
-    private string? myStatus;
-    private string? myToken;
+    private string? returnStatus;
     private List<string> statusList = new List<string>() { "UP", "DOWN" };
     private FormModel myForm = new();
 
@@ -70,7 +70,9 @@
         shouldRender = true;
     }
 
-    private void postApi(){
+    private async Task postApi(){
+        var response = await Api.PostPrtSc(myForm.Status, myForm.Token);
+        await getApi();
     }
 
     /*

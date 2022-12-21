@@ -3,6 +3,6 @@
 public class FormModel
 {
     [Required]
-    public string? Status { get; set; } = "DOWN";
-    public string? Token { get; set; }
+    public string Status { get; set; } = "DOWN";
+    public string Token { get; set; }
 }

@@ -6,7 +6,7 @@ namespace ScreenLogger.Data
 {
     public  class PrtScAPIService
     {
-       private readonly IHttpClientFactory ClientFactory;
+       //private readonly IHttpClientFactory ClientFactory;
 
         public async Task<HttpResponseMessage> GetPrtSc()
         {
@@ -25,13 +25,13 @@ namespace ScreenLogger.Data
             return "haha";
         }
 
-        public async Task PostPrtSc(string stts, string tkn)
+        public async Task<HttpResponseMessage> PostPrtSc(string stts, string tkn)
         {
             var request = new HttpRequestMessage(HttpMethod.Post, "https://localhost:7084/api/PrtSc/PostPrtSc");
             using HttpClient client = new();
             var postBody = JsonContent.Create(new { status = stts, token = tkn });
-            await client.PostAsync("https://localhost:7084/api/PrtSc/PostPrtSc", postBody);
-
+            var response =  await client.PostAsync("https://localhost:7084/api/PrtSc/PostPrtSc", postBody);
+            return response;
         }
     }
 }

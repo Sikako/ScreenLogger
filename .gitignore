@@ -7,3 +7,5 @@ ScreenLogger/bin/Release
 ScreenLogger/obj/Release
 PrtScModels/bin/Release/
 PrtScModels/obj/Release/
+*user
+*sentinel
