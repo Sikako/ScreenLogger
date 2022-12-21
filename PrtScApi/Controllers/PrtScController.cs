@@ -16,16 +16,16 @@ namespace PrtScApi.Controllers
         {
             return Ok(prtsc);
         }
-        /*
+  
+       
         [HttpPost]
         [Route("PostPrtSc")]
-        public IActionResult PostPrtSc([FromBody] string status, [FromBody] string token)
+        public IActionResult PostPrtSc([FromBody]JsonContent  body)
         {
-            prtsc.Status = status;
-            prtsc.Token = token;
+            
 
             return Ok();
         }
-        */
+       
     }
 }

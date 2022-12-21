@@ -5,59 +5,57 @@
 @using System.Text.Json.Serialization
 @using System.Net.Http
 @using Newtonsoft.Json
+@using Microsoft.AspNetCore.Components.Forms
 @inject PrtScAPIService Api
 @inject IHttpClientFactory ClientFactory
 @inject HttpClient Http
 
 <PageTitle>PrintScreen</PageTitle>
-<div class="form-group">
-    <label>選擇螢幕截圖狀態：</label>
-        <div>
-            <input type="radio" id="yes" name="Status" value="YES"  checked/>
-            <label for="yes">YES</label>
-        </div>
-        <div>
-            <input type="radio" id="no" name="Status" value="NO" />
-            <label for="no">NO</label>
-        </div>
-</div>
+<EditForm Model="@myForm" OnValidSubmit="@postApi">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+    <h4> 選擇狀態 - @myForm.Status</h4>
+    <InputRadioGroup Name="StatusSelect" @bind-Value="myForm.Status">
+        @foreach (var status in statusList){
+        <InputRadio Value="@status" />@status<br />
+        }
+    </InputRadioGroup>
+    @if(myForm.Status == "UP"){
+      <br /> <p>Line Notify Token：</p><InputText id="token" @bind-Value="myForm.Token"></InputText><br /><br />
+    }
+
+    <button type="submit" class="btn btn-success">更新狀態</button>
+</EditForm>
 <br />
-<div class="form-group">
-    <label for="token">Line Notify 權杖：</label>
-    <input type="text" class="form-control" id="token"  placeholder="Enter Token" name="token">
-</div>
-<br />
-<button class="btn btn-success" @onclick="getApi">Save</button>
 <hr />
 <p><span>螢幕截圖狀態：@myPrtScStatus.Status</span></p>
-LineNotify權杖： <input type="text" name="inputToken" @bind="myPrtScStatus.Token"  required>
-<button class="btn btn-primary" @onclick="shift_status">點擊</button>
+<p>Token：@myPrtScStatus.Token</p>
+<button class="btn btn-primary" @onclick="getApi">點擊</button>
 
 <h1>@myInt</h1>
-<h5>PrtSc status</h5>
-<p>Status:@myPrtScStatus.Status </p>
-<p>Token:@myPrtScStatus.Token</p>
+
+
 @code {
-    public PrtScStatus myPrtScStatus = new PrtScStatus();
+    public PrtScStatus myPrtScStatus = new();
     private bool getStatusError;
     private bool shouldRender;
-    private string myInt = "113";
+    private string? myInt;
+    private string? myStatus;
+    private string? myToken;
+    private List<string> statusList = new List<string>() { "UP", "DOWN" };
+    private FormModel myForm = new();
 
 
     protected override bool ShouldRender() => shouldRender;
 
-
-
     protected override async Task OnInitializedAsync()
     {
         myInt = await Api.GetInt();
-
-        shouldRender = true;
+        await getApi();
     }
 
-    private async void getApi(){
+    private async Task getApi(){
         var response = await Api.GetPrtSc();
-        shouldRender = true;
         if (response.IsSuccessStatusCode)
         {
             var responseS = await response.Content.ReadAsStringAsync();
@@ -69,10 +67,16 @@ LineNotify權杖： <input type="text" name="inputToken" @bind="myPrtScStatus.To
         {
             getStatusError = true;
         }
+        shouldRender = true;
     }
 
+    private void postApi(){
+    }
+
+    /*
     private void shift_status(){
         shouldRender = true;
         myPrtScStatus.Status = (myPrtScStatus.Status == "UP") ? "DOWN" : "UP";
     }
+    */
 }

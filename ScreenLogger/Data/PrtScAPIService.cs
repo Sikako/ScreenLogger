@@ -1,4 +1,6 @@
-﻿using PrtScModels.Models;
+﻿using Newtonsoft.Json;
+using PrtScModels.Models;
+using System.Text;
 
 namespace ScreenLogger.Data
 {
@@ -21,6 +23,15 @@ namespace ScreenLogger.Data
         {
            await Task.Delay(1000);
             return "haha";
+        }
+
+        public async Task PostPrtSc(string stts, string tkn)
+        {
+            var request = new HttpRequestMessage(HttpMethod.Post, "https://localhost:7084/api/PrtSc/PostPrtSc");
+            using HttpClient client = new();
+            var postBody = JsonContent.Create(new { status = stts, token = tkn });
+            await client.PostAsync("https://localhost:7084/api/PrtSc/PostPrtSc", postBody);
+
         }
     }
 }
