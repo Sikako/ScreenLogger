@@ -9,3 +9,4 @@ PrtScModels/bin/Release/
 PrtScModels/obj/Release/
 *user
 *sentinel
+*.png
